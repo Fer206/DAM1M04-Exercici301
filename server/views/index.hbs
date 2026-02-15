@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/estils.css">
+  <title>Inici</title>
+</head>
+<body>
+
+{{> header}}
+
+<h1>{{site.title}}</h1>
+<h2>{{site.subtitle}}</h2>
+
+<p>{{site.notice}}</p>
+
+{{#if site.showWarning}}
+  <div class="warning">
+    ⚠️ Aquesta pàgina usa dades d’un sol fitxer JSON.
+  </div>
+{{/if}}
+
+</body>
+</html>

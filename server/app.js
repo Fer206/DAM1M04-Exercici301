@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 // Registrar "Helpers .hbs" aquí
-hbs.registerHelper('gt', (a, b) => a > b);
+hbs.registerHelper('lte', (a, b) => a <= b);
 
 // Partials de Handlebars
 hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
   res.render('index', data);
 });
 
-app.get('/cities', (req, res) => {
+app.get('/informe', (req, res) => {
 
   // Legim els fitxers JSON
   const site = JSON.parse(
