@@ -25,10 +25,9 @@
   <tr>
     <td>{{name}}</td>
 
-    <!-- lookup del país -->
+
     <td>{{lookup ../countries country}}</td>
 
-    <!-- population opcional -->
     <td>
       {{#if population}}
         {{population}}
@@ -37,7 +36,6 @@
       {{/if}}
     </td>
 
-    <!-- Costanera / Interior -->
     <td>
       {{#if coastal}}
         Costanera
@@ -46,7 +44,6 @@
       {{/if}}
     </td>
 
-    <!-- Helper lte -->
     <td>
       {{#if (lte population 800000)}}
         Petita
